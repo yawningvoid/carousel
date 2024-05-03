@@ -6,12 +6,12 @@ import CarouselAlbum from './CarouselAlbum'
 
 interface CarouselProps extends ComponentPropsWithoutRef<'div'> {}
 
-const CarouselComponent: FC<CarouselProps> = ({className, children, ...rest}) => {
+const CarouselComponent: FC<CarouselProps> = ({children, ...rest}) => {
   const context = useAlbums()
 
   return (
     <CarouselContext.Provider value={context}>
-      <div {...rest} className={className}>
+      <div {...rest}>
         {children}
       </div>
     </CarouselContext.Provider>

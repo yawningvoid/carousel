@@ -1,15 +1,14 @@
 import { FC, ComponentPropsWithoutRef } from 'react'
-import classNames from 'classnames'
 import { useCarouselContext } from './CarouselProvider'
 import './CarouselAlbum.css'
 
 interface CarouselAlbumProps extends ComponentPropsWithoutRef<'div'> {}
 
-const CarouselGallery: FC<CarouselAlbumProps> = ({className, ...rest}) => {
+const CarouselGallery: FC<CarouselAlbumProps> = ({...rest}) => {
   const { currentAlbum } = useCarouselContext()
 
   return (
-    <div {...rest} className={classNames('album', className)}>
+    <div {...rest} className='album'>
       {currentAlbum && (
         <>
           <h2 className='album__title'>{currentAlbum?.name}</h2>

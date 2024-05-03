@@ -1,15 +1,14 @@
 import { FC, ComponentPropsWithoutRef } from 'react'
-import classNames from 'classnames'
 import { useCarouselContext } from './CarouselProvider'
 import './CarouselGallery.css'
 
 interface CarouselGalleryProps extends ComponentPropsWithoutRef<'div'> {}
 
-const CarouselGallery: FC<CarouselGalleryProps> = ({className, ...rest}) => {
+const CarouselGallery: FC<CarouselGalleryProps> = ({...rest}) => {
   const { albums, currentCoverIndex, marginLeft, handleLeftArrow, handleRightArrow } = useCarouselContext()
 
   return (
-    <div {...rest} className={classNames('gallery', className)}>
+    <div {...rest} className='gallery'>
 
       <button className='gallery__arrow' disabled={currentCoverIndex === albums?.length - 1} onClick={handleLeftArrow}>&lArr;</button>
 
