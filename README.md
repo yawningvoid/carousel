@@ -18,4 +18,4 @@ To start the application, run `npm start`. This will start the application and o
 
 ## API
 
-This project uses the Subsonic API. The base URL is http://demo.subsonic.org/rest/. The username is 'guest' and the password is 'guest'. The version is 1.12.0. The relevant APIs are 'getAlbumList2', 'getCoverArt', and 'getAlbum'.
+This project uses the Subsonic API. The base URL is http://demo.subsonic.org/rest/. 
