@@ -1,0 +1,31 @@
+.album {
+  margin: 0 auto;
+  border: 1px solid black;
+  border-top: 0;
+  width: 800px;
+  box-sizing: border-box;
+  padding: 10px;
+  transition: all 300ms;
+}
+
+.album__title {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.album__tracks {
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse; 
+  border-spacing: 0;
+  transition: all 300ms;
+}
+
+.album__tracks th {
+  background-color: lightgray;
+  border: 1px solid black;
+}
+
+.album__tracks td {
+  border: 1px solid black;
+}
